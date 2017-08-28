@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>忘记密码</title>
+		<link rel="shortcut icon" href="../img/book.ico" />
+		<link href="../css/all.css"  rel="stylesheet" type="text/css"/> 
+	    <link href="../css/reset.css"  rel="stylesheet" type="text/css" />
+	</head>
+	<style>
+	    .f-content{ height: 310px; width: 330px; margin: 60px auto ;
+		 border: 5px cornflowerblue solid;}
+		.f-content form{ margin: 10px auto; width: 280px;}
+		.f-content b{ display: block; margin: 10px 0; font-weight: 550; font-size: 17px;}
+		.f-content a{ margin-left: 200px; margin-top: 8px; display: block;}
+		.f-content input{ width: 260px; height: 20px;}
+		.f-content .f-btn{ width: 50px; margin: 10px 30px;}
+		.f-content h2{ margin: 10px auto; width: 180px;}
+		.f-content .f-code{ width: 150px;}
+		.f-content img{ width: 60px; height: 25px; margin-left:15px; margin-bottom:-15px;
+		 display: inline-block;}
+		.find{ height: 320px;}
+	</style>
+	<body style="background: url(../img/logon/fbg.jpg);">
+	     <div class="logon-header commonWidth">
+			<a href="index.jsp"><img src="../img/logo.png"></a>
+			<a href="#" class="fr"><img src="../img/logon/suggestion.png"></a>
+		</div>
+		<div class="f-content find commonWidth">
+			<h2>设置新密码</h2>
+			<form action="../../forgetServlet?method=find" method="post">
+				<b>用户名</b>
+				<input type="text" name="username" required="required">
+				<b>新密码</b>
+				<input type="password" name="pass" required="required">
+				<b>确认新密码</b>
+				<input type="password" name="conpassl"required="required" /><br />
+				<input type="submit" class="f-btn" value="确定">
+				<input type="reset" class="f-btn" value="重置">
+				<a href="logon.html" >返回登录</a>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+</head>
+<style>
+	body,td,th {
+	font-size: 12px;
+	color: #666666;
+}
+img{ border:0px;}
+a:link {
+	color: #666666;
+	text-decoration: none;
+}
+a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+a:active {
+	color: #FF0000;
+	text-decoration: none;
+}
+#demo{width:980px; overflow:hidden; margin:0px auto}
+</style>
+<body>
+<div id="demo">
+	<table border=0 align=center cellpadding=1 cellspacing=1 cellspace=0 >
+		<tr><td valign=top bgcolor=ffffff id=marquePic1>
+	<table width='100%' border='0' cellspacing='0'>
+	  <tr>
+		<td align=center><a href='#'><img src="../img/index/001.png" width=232 height=139 border=0/><br><br>传承文化</a></td>
+		<td align=center><a href='#'><img src="../img/index/002.png" width=232 height=139 border=0/><br><br>名创优品</a></td>
+		<td align=center><a href='#'><img src="../img/index/003.png" width=232 height=139 border=0/><br><br>一条狗的使命</a></td>
+		<td align=center><a href='#'><img src="../img/index/004.png" width=232 height=139 border=0/><br><br>出众or出局</a></td>
+		<td align=center><a href='#'><img src="../img/index/005.png" width=232 height=139 border=0/><br><br>有话就说</a></td>
+       </tr>
+	</table>
+		</td><td id=marquePic2 valign=top></td></tr>
+	</table></div>
+<script type="text/javascript">
+var speed=50 
+marquePic2.innerHTML=marquePic1.innerHTML 
+function Marquee(){ 
+if(demo.scrollLeft>=marquePic1.scrollWidth){ 
+demo.scrollLeft=0 
+}else{ 
+demo.scrollLeft++ 
+} 
+} 
+var MyMar=setInterval(Marquee,speed) 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script>
+</body>
+</html>

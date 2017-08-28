@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+a{ text-decoration: none;}
+.commonWidth{width:980px;margin-left:auto;margin-right:auto;}
+.topbar{ height: 30px; background:gainsboro;}
+.top-place{ text-align: right;height:30px;line-height: 30px;margin-left: 32px;padding-left: 10px; width:60px;background: url(../img/index/position.png) no-repeat left center;}
+.top-message ul li{list-style: none; float: left; height: 30px; line-height: 30px; margin-left: 18px;}
+.top-message ul a{ text-decoration: none;}
+.top-message ul a:hover{ color: red;}
+.logo-bar{ height: 70px; background:greenyellow; line-height: 70px;}
+.logo{ height: 60px;}
+.search{ height:70px ; width: 430px; margin-left: 120px; }
+.search-text{text-indent: 5px; height:35px;line-height: 35px; width: 360px;}
+.search-btn{margin-left: -5px; height: 35px; width:60px;line-height: 30px; background: orange;}
+.shop-car{cursor: pointer; margin-top:16px; margin-right:35px;width:145px; height:40px; background-color:#FC6; font:14px/35px;color:#FFF}
+.shopcar-text{line-height:40px; height:40px;width:140px; background:url(../img/shopcar.jpg) 6px center no-repeat; text-align:right; }
+.user-manager{display:none;position:absolute; top:26px;left:745px;}
+/*中间导航栏*/
+a:focus{outline:none;}
+.menu{height:40px;display:block;padding:0px;width:780px;}
+.menu ul{list-style:none;padding:0;margin:0;}
+.menu ul li{float:left;overflow:hidden;position:relative;line-height:40px;text-align:center;}
+.menu ul li a{position:relative;display:block;width:78px;height:40px;text-decoration:none;cursor:pointer;font-weight:bold;line-height:40px;}
+.menu ul li a span{position:absolute;left:0;width:78px;font-size:15px;}
+.menu ul li a span.out{top:0px;}
+.menu ul li a span.over,  .menu ul li a span.bg{top:-48px;}
+#menu2{background-image:url(../img/s_03.jpg);background-repeat:repeat;}
+#menu2 ul li a{color:#FFFFFF;}
+#menu2 ul li a span.over{color:#FFF;height:40px;width:78px;background-image:url(../img/w_03.jpg);background-repeat:repeat;}
+.nav-all{ height: 40px;color:white; width: 198px; text-indent: 20px;line-height: 40px; font-size: 18px; background: orangered;}
+.nav-icon{ margin-left: 18px; font-size: 25px;}
+.nav-bar{ height: 40px;}
+/*//轮播图*/
+
+.banner-box{ width: 780px; margin-top: 2px; height: 315px;}
+.carousel-indicators li { background: darkolivegreen;}
+/*左边导航栏*/
+.banner-bar{ height: 316px;}
+.banner-nav{ width:198px; height: 315px; background:greenyellow; margin-top: 2px;}
+.banner-avtive .show-common{ display: block;}
+
+.banner-avtive{ background: #B8860B; padding:10px 12px; line-height: 12px}
+.banner-bar dl{padding:10px 12px; line-height: 12px;}
+.right-icon{ margin-left: 16px; font-size: 18px;}
+.banner-nav a{ text-decoration: none; color: black;}
+.banner-nav a:hover{ color: red; text-decoration: underline;}
+/*导航隐藏层*/
+.show-common{display:none;background: white; position: absolute; top: 140px; left: 382px;width: 783px; height: 318px;z-index:30; border: solid 2px red ; border-left: none;}
+.show1{  }
+.show1-title{ width: 520px; height: 30px; padding: 0 20px; margin-top: 30px; border-bottom: 1px solid saddlebrown;}
+.show1-title a{ text-decoration: none;}
+.show1-one{ height: 116;}
+.show1-one ul{width: 520px; padding-top:1px; padding-left: 60px;}
+.show1-one ul li{ float: left; margin: 8px 16px; list-style: none; }
+.show1-one ul li a{ text-decoration: none;}
+.show-message{ width: 520px; height: 67px; border-top: 2px dotted goldenrod; margin-top: 15px;}
+.show-message img{ margin-left: 5px; margin-bottom: 2px;}
+.like-title{ margin-top: -205px; margin-right: 58px;}
+/*图片展示区*/
+.shop-case{ height:45px;margin-top:10px; height:auto; overflow: hidden;}
+.shop-hot{font-size:20px; margin-left: 12px;line-height: 45px; height: 45px;}
+.case-more{ margin-right: 18px; line-height: 45px; height: 45px;}
+.case-more a{ text-decoration: none; text-align: center;}
+.case-box .book-name{color: #000000; margin-bottom: 8px; margin-top: 10px;}
+.case-box .book-name a{color: #000000; }
+.case-box .book-name a:hover{ color: red;}
+.case-box .author{ color: gray; padding-bottom: 8px;}
+.price{ color: red; font-weight:bolder; margin-right: 8px;}
+.price-d{ color: grey; text-decoration:line-through;}
+/*左侧新书热卖区*/
+.case-hot{ width: 275px; height: 565px; border-left: solid 1px gainsboro;}
+.hot-title{ height: 43px; font-size: 26px; line-height: 43px; text-align: center; background: url(../img/hot.jpg) no-repeat 20px center;}
+.hot-tab{position: relative;margin-top:22px; margin-left: 5px; height: auto; width: 275px;overflow: hidden;}
+.tabs-content{position: relative;left:5px;top:5px;margin-left: 5px; text-align: center;}
+.hot-tab li{ margin-right: 1px; float: left; list-style: none; display: block; width: 53px; height:25px; text-align: center;}
+.hot-tab ul{ border: 1px solid gainsboro; height: 26px;}
+.com-content{height: 500px; width: 269px; position:absolute;left:0px; top:24px;border: 1px solid gainsboro; border-top: none; display: none;}
+.tabs-content{}
+.tabs-content ul li{list-style: none; float:left; margin: 4px 0;padding-bottom: 5px; width: 275px;border-bottom: 1px dotted darkgray; }
+.tabs-content ul li a{ text-decoration: none;cursor: pointer;}
+.tabs-text{ font-size: 14px; color:#101010; font-family:"楷体";}
+.tabs-num{ color: red; font-size: 16px; margin-right: 16px; margin-left: -18px;}
+.look-main{font-size: 12px; margin-left:100px; margin-top: 15px;}
+.tab-hover{display: block;}
+.tab-active{border-bottom: 1px solid white; border-top: 3px solid red;}
+#moocBox ul {
+	list-style: none;           /*  去掉ul标签默认的点样式  */
+}
+#moocBox a img {
+	border: none;        /*  超链接下，图片的边框  */
+}
+#moocBox a {
+	color: #333;
+	text-decoration: none;     /* 超链接样式 */
+}
+#moocBox a:hover {
+	color: #ff0000;
+}
+#mooc {
+	width: 260px;
+	border: 4px solid #ababab;
+	-moz-border-radius: 15px;      /* Gecko browsers */
+	-webkit-border-radius: 15px;   /* Webkit browsers */
+	border-radius: 15px;
+	box-shadow: 2px 2px 5px #ababab;
+	margin: 20px auto 0;
+	text-align: left;               /* 让新闻内容靠左 */
+}
+/*  头部样式 */	
+#moocTitle {
+	height: 62px;
+	overflow: hidden;  /* 这个一定要加上，内容超出的部分要隐藏，免得撑高头部 */
+	font-size: 26px;
+	line-height: 62px;
+	padding-left: 30px;
+	background-image: -moz-linear-gradient(top, #f05e6f, #c9394a); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f05e6f), color-stop(1, #c9394a)); /* Saf4+, Chrome */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fa1ff', endColorstr='#f05e6f', GradientType='0'); /* IE*/
+	border: 1px solid ##f05e6f;
+	-moz-border-radius: 8px 8px 0 0;      /* Gecko browsers */
+	-webkit-border-radius: 8px 8px 0 0;   /* Webkit browsers */
+	border-radius: 8px 8px 0 0;
+	color: #fff;
+	position: relative;
+}
+#moocTitle a {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: inline;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+}
+/*  底部样式 */
+#moocBot {
+	width: 399px;
+	height: 10px;
+	overflow: hidden;     /* 这个一定要加上，内容超出的部分要隐藏，免得撑高底部结构 */
+}
+/*  中间样式 */
+#moocBox {
+	height: 384px;
+	width: 235px;
+	margin-left: 0px;
+	margin-top: 10px;
+	overflow: hidden;    /*  这个一定要加，超出的内容部分要隐藏，免得撑高中间部分 */
+}
+#mooc ul li {
+	height: 24px;
+	font-size: 12px;
+	line-height: 24px;
+	text-algin: center; 
+}
+#mooc ul li a {
+	width: 150px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	text-indent: 15px;
+	height: 24px;
+}
+#mooc ul li span {
+	float: right;
+	color: #999;
+}
+/*shop-main主要显示区*/
+.shop-main{ height: auto;overflow: hidden;}
+.shop-tab{height:45px;margin-top:10px; height:auto; overflow: hidden; width: 700px; }
+.tab-header{font-size:20px; margin-left: 12px;line-height: 45px; height: 45px;width: 700px;margin-bottom: 10px;}
+.tab-more{line-height: 45px; height: 45px;margin-right: 18px; font-size: 16px;}
+.tab-title{border-bottom:1px solid darkorange ;width: 700px; height: 30px; padding-left:5px; }
+.tab-title li{list-style: none; float: left; width: 75px; height: 30px; cursor: pointer;text-align: center;}
+.contents ul li{list-style: none; float: left; width: 175px; height: 245px; margin-top: 15px;}
+.tab-name{ color: #000000; margin-top: 10px; text-align: center;}
+.tab-coin{ color:darkgoldenrod; font-size: 12px; text-align: center; margin-top: 8px; margin-bottom: 7px;}
+.tab-price{ text-align: center;}
+.lihover{border-bottom: 2px solid white; border-top: 3px solid darkorange;border-right: 3px solid darkorange;border-left: 3px solid darkorange;box-shadow: 10px darkorange;}
+.shop-content{width: 275px; height: 565px; border-left: solid 1px gainsboro;margin-top: 25px;}
+.shop-bottom{ height: 195px; width: 270px;}
+.shop-bottom .carousel{height: 195px; width: 270px;}
+.shop-bottom .carousel-control{ font-size: 20px;}
+/*返回顶部*/
+#tbox{width:54px; float:right; position:fixed; right:110px; bottom:25px;}
+#pinglun,#xiangguan,#gotop{ width:54px; height:56px; background:url(../img/index/icon.png) no-repeat; display:block;}
+#pinglun{ background-position:0 0;}
+#xiangguan{ background-position:0 -59px;}
+#gotop{ background-position:0 -118px;} 
+/*右侧快捷菜单*/
+.menu2{ position: fixed;top: 120px; left: 15px; width: 80px; height: 420px; border: 2px solid lightgray;background: greenyellow;}
+.menu2 a{ text-decoration: none; width: 75px; height: 80px;margin-top: 4px; display: block; text-align: center; }
+/*注册功能的样式*/
+span {font-size:12px;}
+		.stats1 {olor:#aaa;}
+		.stats2 {color:#000;}
+		.stats3 {color:red;}
+		.stats4 {color:green;}
+.all{ height: 580px;  margin-top:45px; margin-left: 760px; }
+/*实质上是共同样式*/
+.logon-header{ margin-top: 10px;height: 78px;line-height: 78px;}
+.logon-box{background: url(../img/logon/bg1.jpg) center center no-repeat;height:390px; width: 320px;border: 4px solid gray; padding:0  18px;border-radius: 5px;}
+.register-box{background: url(../img/logon/bg.jpg) center center no-repeat; height:525px; width:320px; border: 4px solid gray;padding:0  14px;border-radius: 5px;}
+.all-box{ padding:0  18px;border-radius: 10px;}
+.logon-box a{ display:inline-block; margin: 10px 10px;width: 100px; line-height: 22px; height: 22px;}
+.all-box input{text-indent: 32px; margin: 14px 0 14px ; align-self: center; width: 280px; height: 35px;border-radius: 5px;outline:none;}
+#users{ background: url(../img/logon/user.png) 3px center no-repeat;}
+#username{ background: url(../img/logon/user.png) 3px center no-repeat;}
+#pass{ background: url(../img/logon/pass.png) 3px center no-repeat;}
+#repass{ background: url(../img/logon/pass.png) 3px center no-repeat;}
+#email{ background: url(../img/logon/email.png) 12px center no-repeat;}
+.all-box h1{ text-align: center; margin-bottom: 20px;text-shadow: 5px 5px 5px #269ABC;}
+.all-box hr{ margin-bottom: 20px;background: aquamarine;}
+ .all-box .re-btn{width: 45px; height: 25px; text-indent: 1px; font-size: 14px; margin: 5px 20px;background: orangered; cursor: pointer; color: white;border-radius: 8px;
+  box-shadow: 0 6px #999;}
+  .all-box .re-btn:hover{background-color: #3e8e41;box-shadow: 0 5px #666;transform: translateY(4px);}
+ .register-box .to-common{ line-height:20px;display:block;font-size: 20px ; padding: 10px 8px; width: 340px; height: 20px; background: aquamarine; margin-left: -18px; margin-top:5px;}
+.logon-box .to-common{line-height:30px;display:block;font-size: 20px ; padding: 15px 8px; width: 340px; height: 30px; background: aquamarine; margin-left: -18px; margin-top:px;}
+.to-common button{width: 150px; height:30px ; cursor: pointer; font-size: 18px;border-radius: 8px; background:goldenrod;}
+.to-common button:hover{ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+.select{text-indent:0;height: 30px;line-height: 30px; margin-top: -10px; margin-bottom: 15px;}
+.select input{width: 20px; height: 12px;}
+.select span{ font-size: 15px; color: red; font-weight: bold; cursor: pointer;}
+.colock{position: absolute; top: 135px; left: 180px;}
+/*book1的购买过程*/
+.crub span{ font-size: 16px; color:gray;}
+.crub{margin: 16px auto;}
+.pic{ border: 1px solid darkgray; width: 350px; height: 350px; padding: 30px 45px;}
+.b-name{ font-size: 20px; color:forestgreen;font-weight: bold; }
+.b-detail{font-size: 14px;overflow: hidden; padding-bottom: 10px;border-bottom: 1px solid gainsboro;}
+.b-sumarry{margin-left: 20px;}
+.b-detail ul{margin-top: 8px;overflow: hidden;}
+.b-detail li{ list-style: none; float: left;margin-top: 12px; text-align: left; width: 200px;}
+.t1{margin-right:5PX;}
+.t2{ margin-right:5px ;}
+.b-buy{ overflow: hidden; margin-top: 10px; border-bottom: 1px solid gainsboro;}
+.b-common{ height: auto; line-height: 16px;margin-top: 12px;}
+.b-price h5{ height: 30px; line-height: 30px;}
+.curren-price{float: left; color: red; font-size: 20px; height: 30px; margin-right: 10px;}
+.b-send{ color: orange; font-size: 14px; margin-left: 30px;}
+.b-discount{margin-left: 5px;}
+.b-real{margin-left: 72px;font-size: 12px; margin-top: 12px;margin-bottom: 10px;}
+.b-select{ margin-top: 10px; height: 32px;line-height: 30px;margin-bottom: 18px;}
+.b-select h5{height: 30px; line-height: 30px;}
+.new-old a{ height: 30px; width: 25px; border: 1px solid lightgray; font-size:18px; margin-left: 10px;}
+/*文本框数量的加减*/
+.b-num{height: 30px; width: 80px; line-height: 30px;margin-bottom: 15px;}
+.p_number{margin-top:-20px;border:solid 1px #ddd;padding:10px 5px 0 10px;width:520px;height:50px;margin-left: 90px;}	
+.p_number .f_l{float:left;}
+.p_number .add_chose{width:105px;}
+.p_number .add_chose a{float:left;margin:5px 0 0 0;display:block;width:15px;height:15px;line-height:99em;overflow:hidden;background:url(../img/book1/reduce-add.gif) no-repeat;}
+.p_number .add_chose a.reduce{background-position:0 0;}
+.p_number .add_chose a.reduce:hover{background-position:0 -16px;}
+.p_number .add_chose a.add{background-position:-16px 0;}
+.p_number .add_chose a.add:hover{background-position: -16px -16px;}
+.p_number .add_chose .text{float:left;margin:0 5px;display:inline;border:solid 1px #ccc;padding:4px 3px 4px 8px;width:40px;line-height:18px;font-size:14px;color:#990000;font-weight:800;}
+.p_number .buy{line-height:2em;}
+.p_number .buy .total-font{font-family:Arial;font-size:26px; color: red;}
+.p_number .buy .jifen{margin-left:20px;color:#ACACAC;}
+.p_number .buy .jifen b{margin:0 3px;}
+.b-save{ font-size: 16px;color:dodgerblue;}
+.b-confirm{margin-top: 12px; margin-bottom: 10px;}
+.b-talk{ margin:10px 10px;}
+.b-other{width: 350px;}
+.b-btn{ margin-left: 20px; width: 600px;}
+.b-btn span{ border-radius: 5px;color:white;text-align:center;line-height: 35px; font-size:18px;width: 100px;height: 35px; background: red; display: inline-block; margin: 45px 40px;}
+.b-btn .btn1{ width: 180px;}
+.b-share{text-indent: 5px; margin:5px 15px;height: 50px; width: 300px; border: 1px solid darkgrey; display: block;line-height: 50px; font-size: 18px;}
+.footer-a{ margin: 10px 0;}
+/*书的详细介绍*/
+.b-introduce{height: auto; }
+.b-like{ border: 1px solid gainsboro; height: 830px; width: 210px;margin-bottom: 10px;}
+.b-like h3{text-align: center; margin-top: 10px; color: red; font-weight: bold;}
+.book-introduce{ height: 830px; width: 760px; border: 1px solid gainsboro;position: relative;}
+.book-introduce a:hover{ color:black;}
+.book-t li{text-align:center; margin:5px 18px;cursor:pointer;list-style: none;float:left; width: 160px; height: 30px; display: inline-block; font-size: 25px;}
+.bookhover{color: white;background: orange;}
+.book-detail{ margin-left: 10px;}
+.book-in{ margin: 15px 0; height: 140px; width: auto; display: block;}
+.book-in h4{ margin: 15px 12px;}
+.book-in p{text-indent: 30px; height: 30px; line-height: 30px; font-weight: 400; font-size: 15px;}
+.author-in{ height: 220px;}
+.mulu-in li{ width: 150px; height: 25px; margin: 10px 30px; float:left; font-size:15px}
+.book-critical h4{ width: auto; height: 30px;background: gainsboro;line-height: 30px;font-weight: bold; text-indent: 12px; margin:10px 0}
+.book-critical img{margin-right:8px}
+.book-critical li{ list-style: none; width: auto; height: 80px; border-bottom: 1px solid gainsboro; margin: 10px 5px;}
+.book-critical li span{ float: right; margin-right: 10px; color: darkgray; margin-top: 30px;}
+/*底部样式*/
+.footer{height: 150px; background:gainsboro; padding: 30px 0;}
+.footer-content{ padding-top10px;width: 820px; margin: 0px auto;}
+.footer-content2{ margin:15px auto;width:720px;}
+.footer-b{ margin-top: 15px; text-indent:235px;}
+/*
+ * 购物车
+ */
+.procudre{width: 720px; height: 40px; margin-top:px;}
+.car-main{ margin-top: 10px;}
+.car-title{ height: 30px; line-height: 30px; background:gainsboro; font-size: 16px; text-indent: 10px;}
+.car-thing table{ margin-top: 10px;}
+.thing-title{ color: gray;}
+.thing1{width:980px; margin-top: 10px; background:lightgoldenrodyellow;}
+.thing1 .p_number{ width: 110px; margin-left: 0;}
+.thing1 table{ margin-left: 20px;text-align: center;}
+.th2{ margin-left: 20px;}
+.tabe1{ margin: 0 100px;}
+.car-back a{ text-decoration: none; margin: 0 50px;}
+.totalprice{margin-top:10px;width:310px; height:30px; margin-left:860px; font-size:23px}
+.totalprice a{text-decoration:none; margin:0 12px; color:red; font-weight:bold}
+.totalprice a:hover{ font-size:20px}
+/*填写地址页面*/
+.buy-detail{ height: auto;border: 1px solid orange; margin: 15px auto; padding: 15px 20px;}
+.buy-detail table{ margin-top: 10px; line-height: 25px;}
+.car-main2{ margin-top: 20px;}
+.car-main2 li{ list-style: none; width:410px; height: 30px; margin: 15px 20px;}
+.address{ width: 420px; height: auto; border-left: 2px solid gainsboro;}
+.address i{ color: red; margin-right: 10px;}
+.address h4{ text-indent: 20px; display: inline-block;}
+.address a{ text-decoration: none; margin-left: 120px;}
+.address input{ width: 255px;}
+.a1{ text-indent: 45px;}
+.a3{text-indent: 30px;}
+.a2{ text-indent: 15px;}
+.a4{ text-indent: 15px;}
+.a5{ text-indent: 45px;}
+.a6{ text-indent: 150px;}
+.a6 input{ width: 65px; height: 25px; text-indent: 1px; font-size: 14px; margin: 5px 20px;background: orangered; cursor: pointer; color: white;border-radius: 8px;
+  box-shadow: 0 6px #999; }
+ .a6 input:hover{background-color: #3e8e41;box-shadow: 0 5px #666;transform: translateY(4px);}
+.default-add{ border: 1px solid gainsboro; height: auto;}
+ .default-add h5{ margin: 12px 10px; float: left;}
+ .default-add a{ float: right; text-decoration: none; margin: 10px 12px;}
+/*付款页面*/
+.total-title{ height: auto; border: 2px solid gainsboro; margin:10px auto; padding-left: 50px;}
+.total-title h4{ margin-top: 25px; margin-bottom: 5px; font-weight: bold;}
+.total-title h5{ margin-top: -20px; font-weight:bold; margin-right:10px;}
+.total-title span{ color: red; font-size: 13px; font-weight: bold;}
+.total-title h5 b{ color: red;}
+.total-content{ height: auto; padding: 12px 10px; border: 1px solid gainsboro;}
+.total-content a{ text-decoration: none; height:32px;line-height:32px;background: lightblue;text-align: center; width: 100px;display: block; margin: 12px auto;}
+.total-content h4{ margin-bottom: 20px;}
+.total-content li{ height: 65px; line-height: 65px;list-style: none;cursor: pointer; padding: 0 15px; margin: 5px 0;}
+.total-content li img{ margin-left: 20px;}
+.add-ic{ margin-bottom: 10px;}
+.add-ic input{  height: 50px; width: 180px; background: orangered;color: white; font-size: 20px; margin: 10px 15px;}
+.payhover{ border: 2px solid gainsboro;}
+.pay{border: 2px solid orange;}
+.pn .btn{ color: red; font-weight: bold;}
+.hpn{ border-top: 1px solid darkgray; width: 900px;}
+.hpn p{ margin: 12px 0; font-weight: 400;}
+.hpn table{ display: inline-block; float: right; margin-top: -30px;}
+.pn-p{ margin-left: 800px}
+/* 弹出登录框 */
+.login_box{display:none; POSITION:absolute; left:50%; top:50%; width:600px; height:400px; margin-left:-300px;
+margin-top:-200px; border:1px solid #888; background-color:#edf; text-align:center"}

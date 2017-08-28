@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.commonWidth{width:980px;margin-left:auto;margin-right:auto;}
+header{width:100%; height: 30px; background:papayawhip; }
+.topbar{ height: 30px; background:papayawhip;}
+.collection{text-align: center;line-height: 30px; font-weight: bold; font-size: 15px;}
+.right-area{ line-height: 30px;padding-left: 5px;}
+.right-area a{margin-left: 12px;}
+.logobar{ height: 80px; background:lightseagreen; line-height: 80px}
+.search{margin-top: ;}
+.search-text{text-indent: 5px; height:35px;line-height: 35px; width: 360px; margin-left: 145px; margin-right: -8px;}
+.search-btn{ height: 35px; width:60px; background: orange;line-height: 35px;}
+.shop-car{ margin-top:25px;width:150px; height:35px; background-color:#FC6; font:14px/35px;color:#FFF}
+.shoptext{line-height:35px;width:93px; border-right:#C33 solid 1px; background:url(../img/shopcar.jpg) 6px center no-repeat; text-indent:43px}
+.shopnum{ height:35px; width:52px; border-left:#C63 solid 2px;line-height:35px; text-indent:5px; background:url(../img/xiasanjioa.jpg) no-repeat 15px center}
+.navbox{height:35px; background-color:#096; color:#FFF;}
+.daohang,.nav-box{ height: 35px;}
+.nav-box{}
+.nav-fir{ margin-left: -65px;}
+.nav-box li{list-style: none;float:left; line-height: 35px;width:122.5px; background: url(../img/INDEX_LM.GIF); text-align:center;}
+.nav-box li a{ color: white;}
+.image-actice{height: auto; margin-top:-15px; width:780px;}
+.main-daohang{ height: 315px; background:dodgerblue; width:198px; margin-top: -15px;}
+.shop-item-last{padding:10px 12px; line-height: 12px}
+.shop-item-last a{ text-decoration: none; color: white;}
+.right-icon{ margin-left: 16px; font-size: 18px;}
+.show-common{width: 790px; height: 315px;z-index:30; border: solid 2px red ; border-left: none;}
+.show1{ background: greenyellow; position: absolute; top: 150px; left: 383px; }
+.show1-titl{ width: 520px; height: auto; padding: 0 12px;}
+.show1-one{ width:520px ;height: auto;}
+.show1-one h3{ margin-top: 25px; margin-left: 30px;}
+.show1-one ul{width: 520px; padding-top:1px; padding-left: 60px;}
+.show1-one ul li{ float: left; margin: 8px 16px; list-style: none; }
+.show1-one ul li a{ text-decoration: none;}
+.xian1{ width: 520px; color: darkgoldenrod; margin-top: 10px;}
+.like-title{ margin-top: -125px; margin-right: 58px;}
+/*下面的图片展示区*/
+.shop-site{ margin-top: 310px; height: auto;}
+.shop-hot{ font-size: 25px;}
+.shop-site .more a{ text-decoration: none; text-align: center;}
+

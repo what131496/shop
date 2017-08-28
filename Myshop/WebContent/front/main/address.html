@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<title>收货地址填写-缺书网</title>
+	<link rel="shortcut icon" href="../img/book.ico" />
+	<script src="../Bootstrap/js/jquery.min.js"></script>
+	<script src="../js/Area.js"></script>
+	<script src="../js/AreaData_min.js"></script>
+	<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/all.css"  rel="stylesheet" type="text/css"/> 
+	<link href="../css/reset.css"  rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	<div class="header">
+		<div class="topbar">
+			<div class="commonWidth">
+				<div class="fl top-place">
+					兰州
+				</div>
+				<div class="top-message fr">
+					<ul>
+						<li><a href="logon.html" target="_blank">你好，请登录 |</a></li>
+						<li><a href="register.html" target="_blank">免费注册 |</a></li>
+						<li><a href="#">我的订单|</a></li>
+						<li><a href="#">我的书店 |</a></li>
+						<li><a href="#">客户服务</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="logo-bar">
+				<div class="commonWidth">
+					<div class="logo fl">
+						<a href="index.jsp" target="_blank"><img src="../img/logo.png" title="logo" /></a>
+					</div>
+					<div class="fr procudre">
+						<img src="../img/book1/car2.png">
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="commonWidth buy-detail">
+	   <h4>您的购物详情为：</h4>
+	   <table width="800">
+	   	<tr>
+	   		<td>书名：好吗好的</td>
+	   		<td>作者：大冰</td>
+	   		<td>数量：5</td>
+	   		<td>金额：242￥</td>
+	   	</tr>
+	   		<tr>
+	   		<td>书名：好吗好的</td>
+	   		<td>作者：大冰</td>
+	   		<td>数量：5</td>
+	   		<td>金额：242￥</td>
+	   	</tr>
+	   </table>
+	</div>
+	<div class="car-main2 clearfix commonWidth">
+		<div class="fl">
+			<div id="demo" style="height: 300px; width: 380px; overflow: hidden;margin: 20px auto;">
+				<div id="demo1">
+					<a href="#"><img src="../img/cart/001.png"></a>
+					<a href="#"><img src="../img/cart/002.png"></a>
+					<a href="#"><img src="../img/cart/003.png"></a>
+					<a href="#"><img src="../img/cart/004.png"></a>
+				</div>
+				<div id="demo2"></div>
+				<script>
+				   var speed=80
+				   demo2.innerHTML=demo1.innerHTML
+				   function Marquee(){
+				   if(demo2.offsetTop-demo.scrollTop<=0)
+				   demo.scrollTop-=demo1.offsetHeight
+				   else{
+				   demo.scrollTop++
+				   }
+				   }
+				   var MyMar=setInterval(Marquee,speed)
+				   demo.onmouseover=function() {clearInterval(MyMar)}
+				   demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+			   </script>
+			</div>
+			
+		</div>
+		<div class="fr address">
+			<h4>收货人信息核对填写：</h4>
+			<a href="cart.jsp">《&nbsp;返回购物车</a>
+			<form action="../../AddressServlet" >
+				<ul>	
+					<li><i>*</i>收货人姓名：<input type="text" name="name" required="required"></li>
+					<li class="a1"><i>*</i>电话：<input type="number" name="phone"></li>
+					<li class="a3">固定电话：<input type="number" name="fixPhone"></li>
+					<li class="a2"><i>*</i>所在地区：
+						<select id="seachprov" name="seachprov" onChange="changeComplexProvince(this.value, sub_array, 'seachcity', 'seachdistrict');"></select>&nbsp;&nbsp;
+						<select id="seachcity" name="homecity" onChange="changeCity(this.value,'seachdistrict','seachdistrict');"></select>&nbsp;&nbsp;
+						<span id="seachdistrict_div"><select id="seachdistrict" name="seachdistrict"></select></span>
+					</li>
+					<script>
+						$(function (){
+								initComplexArea('seachprov', 'seachcity', 'seachdistrict', area_array, sub_array, '44', '0', '0');
+							});
+							
+							//得到地区码
+							function getAreaID(){
+								var area = 0;          
+								if($("#seachdistrict").val() != "0"){
+									area = $("#seachdistrict").val();                
+								}else if ($("#seachcity").val() != "0"){
+									area = $("#seachcity").val();
+								}else{
+									area = $("#seachprov").val();
+								}
+								return area;
+							}
+					</script>
+					<li class="a4"><i>*</i>详细地址：<input type="text" name="address"></li>
+					<li class="a5"><i>*</i>邮箱：<input type="text" name="aEmail"></li>
+					<li class="a6"> <input type="submit" value="确定"></li>
+				</ul>
+				
+			</form>
+		</div>
+	</div>
+	<div class="" style="width: 1010px; margin: 5px auto;">
+	   <img src="../img/cart/address1.png">
+	</div>
+	<div class="footer">
+		  <iframe align="center" width="100%" height="100%" src="../need/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	</div>
+	</body>
+</html>

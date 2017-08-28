@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>缺书网管理中心</title>
+        <link rel="shortcut icon" href="../img/book.ico" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <script src="../js/jquery.min.js"></script>
+    </head>
+    <style>
+       .mtitle b{border: 1px gainsboro solid;  width:120px;list-style: none; height: 30px; margin: 25px 10px; 
+		text-align: center; line-height: 30px; background:#339933;color: white;cursor: pointer; display: block;
+		border-radius:1px;}
+		.mtitle{ margin-left: 15px;}
+		.commona{ background: white; width: 100px;margin: -23px 0 -23px 20px; text-align: center; padding: 5px 0;}
+		.commona a{ display: block; margin: 10px 0; color: black; height: 20px; width: 100px;}
+		.commona a:hover{ color: red; background:greenyellow; width: 60px; height: 20px; width: 100px;}
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#mt1").click(function () {
+                $("#mc1").slideToggle();
+            });
+            $("#mt2").click(function () {
+                $("#mc2").slideToggle();
+            });
+            $("#mt3").click(function () {
+                $("#mc3").slideToggle();
+            });
+             $("#mt4").click(function () {
+                $("#mc4").slideToggle();
+            });
+             $("#mt5").click(function () {
+                $("#mc5").slideToggle();
+            });
+             $("#mt6").click(function () {
+                 $("#mc6").slideToggle();
+             }); 
+        });
+    </script>
+    <body style="background:url(../img/bg.png);>
+    	<div id="mtitle" class="mtitle">
+    	   <b id="mt1">管理员信息</b>
+		   <div class="commona" id="mc1" style="display: none">
+		   		<a href="admin.jsp" target="right">查看详情</a>
+	  			<a href="add.jsp" target="right">添加管理员</a>
+	 		</div>
+	 		 <b  id="mt2">用户信息</b>
+		   <div class="commona" id="mc2" style="display: none">
+		   		<a href="users.jsp" target="right">查看详情</a>
+	  			<a href="addUsers.jsp" target="right">添加用户</a>
+	 		</div>
+	 		 <b  id="mt3">订单管理</b>
+		   <div class="commona" id="mc3" style="display: none">
+		   		<a href="indent.jsp" target="right">查看详情</a>
+	  			<a href="analysis.jsp" target="right">分析</a>
+	  			<a href="modify.jsp" target="right">订单设置</a>
+	 		</div>
+	 		<b id="mt4">商品信息</b>
+		   <div class="commona" id="mc4" style="display: none">
+		   		<a href="book.jsp" target="right">查看详情</a>
+				<a href="addBook1.jsp" target="right">添加商品</a>
+				<a href="fileUpload.jsp" target="right">上传图片</a>
+	 		</div>
+	 		<b id="mt5">留言板</b>
+		   <div class="commona" id="mc5" style="display: none">
+		   		<a href="message.jsp" target="right">查看详情</a>
+				<a href="../../front/main/contact.jsp" target="right">添加留言</a>
+	 		</div>
+       </div>
+ 	</body>
+</html>

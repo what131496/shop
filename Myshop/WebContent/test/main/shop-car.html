@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="shortcut icon" href="../img/book.ico" />
+	<script src="../Bootstrap/js/jquery.min.js"></script>
+	<script src="../js/payfor.js"></script>
+	<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/all.css"  rel="stylesheet" type="text/css"/> 
+	<link href="../css/reset.css"  rel="stylesheet" type="text/css" />
+	</head>
+	<script>
+		
+	</script>
+	<body>
+	<div class="header">
+		<div class="topbar">
+			<div class="commonWidth">
+				<div class="fl top-place">
+					兰州
+				</div>
+				<div class="top-message fr">
+					<ul>
+						<li><a href="logon.html" target="_blank">你好，请登录 |</a></li>
+						<li><a href="register.html" target="_blank">免费注册 |</a></li>
+						<li><a href="#">我的订单|</a></li>
+						<li><a href="#">我的书店 |</a></li>
+						<li><a href="#">客户服务</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="logo-bar">
+				<div class="commonWidth">
+					<div class="logo fl">
+						<a href="index.html" target="_blank"><img src="../img/logo.png" title="logo" /></a>
+					</div>
+					<div class="fr procudre">
+						<img src="../img/book1/car1.png">
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="car-main commonWidth">
+		<div class="car-title">
+			<b>选货清单</b>
+		</div>
+		<div class="car-thing">
+			<div class="thing-title">
+				<table width="980">
+					<thead width="980">
+						<td width="530">
+						   <label for="j_select"><input id="j_select" type="checkbox">&nbsp;&nbsp;全选</label><b class="tabe1">商品详情</b>
+						</td>
+						<td>单价(元)</td>
+						<td>数量(件)</td>
+						<td>金额(元)</td>
+						<td>操作</td>
+					</thead>
+				</table>
+			</div>
+		</div>
+	    <div class="thing1 fr">
+	    	<table>
+	    		<thead>
+	         		<label class="th2" for="j_select">
+	         			<input id="j_select" type="checkbox">&nbsp;&nbsp;
+	         		</label><b>缺书自营</b>
+	    		</thead>
+	    		<tr>
+	    			<td><label for="j_select"><input id="j_select" type="checkbox"></label>
+	    				<img src="../img/car-book1.png"> 
+	    			</td>
+	    			<td width="360"><h5>这本书的最大优点在于真的不让人知道那个智慧在哪这本书的最大优点在于真的不让人知道那个智慧在哪</h5></td>
+	    			<td width="120"><span id="price_item_1">￥35</span></td>
+	    			<td width="80">
+	    				<div class="p_number">
+		                    <div class="f_l add_chose">
+							<a class="reduce" onClick="setAmount.reduce('#qty_item_1')" href="javascript:void(0)">
+							-</a>
+							<input type="text" name="qty_item_1" value="1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')" class="text" />
+							<a class="add" onClick="setAmount.add('#qty_item_1')" href="javascript:void(0)">
+							+</a>
+							</div>
+						</div>
+	    			</td>
+	    			<td width="120">
+	    				<div class="buy">
+	    				<span class="total-font" id="total_item_1">120</span>
+	    				<input type="hidden" name="total_price" id="total_price" value="" />
+	    				</div>
+	    			</td>
+	    			<td width="120">
+	    				<a href="#">删除</a>
+	    				<a href="#">加入收藏</a>
+	    			</td>
+	    		</tr>
+	    	</table>
+	    </div>
+	
+	</div>
+	</body>
+</html>

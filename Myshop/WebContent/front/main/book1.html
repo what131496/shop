@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>好吗好的</title>
+	<link rel="shortcut icon" href="../img/book.ico" />
+	<script src="../Bootstrap/js/jquery.min.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/payfor.js"></script>
+	<script src="../Bootstrap/js/bootstrap.min.js"></script>
+	<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/all.css"  rel="stylesheet" type="text/css"/> 
+	<link href="../css/reset.css"  rel="stylesheet" type="text/css" />
+	<body>
+	<div class="header">
+		<div class="topbar">
+			<div class="commonWidth">
+				<div class="fl top-place">
+					兰州
+				</div>
+				<div class="top-message fr">
+					<ul>
+						<li><a href="logon.html" target="_blank">你好，请登录 |</a></li>
+						<li><a href="register.html" target="_blank">免费注册 |</a></li>
+						<li><a href="#">我的订单|</a></li>
+						<li><a href="#">我的书店 |</a></li>
+						<li><a href="#">客户服务</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="logo-bar">
+				<div class="commonWidth">
+					<div class="logo fl">
+						<a href="index.html"><img src="../img/logo.png" title="logo" /></a>
+					</div>
+					<div class="fl search">
+						<input type="text" placeholder="请输入关键字" class="search-text"/>
+						<input type="submit" value="提交" class="search-btn" />
+					</div>
+					<div class="shop-car fr">
+						<a class="#"><span class="shopcar-text fl">我的购物车[0]</span></a>
+					</div>
+				</div>
+		</div>
+		<div class="nav-bar commonWidth">
+			<div class="nav-all fl">
+				全部商品分类<span class="nav-icon">&#8711;</span>
+			</div>
+			<div id="menu2" class="menu fr">
+				<ul>
+				<li><a href="#">图书</a></li>
+				<li><a href="#">童书</a></li>
+				<li><a href="#">教育</a></li>
+				<li><a href="#">小说</a></li>
+				<li><a href="#">言情</a></li>
+				<li><a href="#">励志</a></li>
+				<li><a href="#">考试</a></li>
+			    <li><a href="#">关于我们</a></li>
+				<li><a href="#">电子书</a></li>
+				<li><a href="#">留言板</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="book1 clearfix commonWidth">
+		<div class="crub commonWidth">
+			<span>您现在所处的位置：</span>
+			<a href="#">全部分类</a>
+			<span> > </span>
+			<a href="#">文学小说</a>
+			<span> > </span>
+			<a href="#">小说集</a>
+		</div>
+		<!--
+        	作者：1359102632@qq.com
+        	时间：2017-04-07
+        	描述：图书购买区
+        -->
+        <div class="book1-buy">
+	       	<div class="pic fl">
+	       		<img src="../img/book1/big-b1.png" />
+	        </div>
+        	<div class="b-sumarry fl">
+        		<div class="b-name">
+        			好吗好的
+        		</div>
+        		<div class="b-detail">
+        			<ul>
+        				<li class="t1">作者：<a href="#">大饼</a></li>
+        				<li class="t2">出版社：<a href="#">湖南文艺出版社</a></li>
+        				<li class="t3">ISBN：9787540476892</li>
+        			</ul>
+        			<ul>
+        				<li class="t1">出版日期：2010年5月6日</li>
+        				<li class="t2">页数：368</li>
+        				<li class="t3">定价：39</li>
+        			</ul>
+        		</div>
+        		<div class="b-buy">
+        			<div class="b-price clearfix">
+        				<h5 class="fl">缺书价格：</h5>
+        				<span class="curren-price" id="price_item_1">￥35</span>
+        				<h5>[6.5折]</h5>
+        			</div>
+        			<div class="b-common">
+        				<h5 class="fl">配送：</h5>
+        				<span class="b-send">满36元免运费</span>
+        			</div>
+        			<div class="b-common">
+        			   <h5 class="fl">优惠活动：</h5>
+        			   <span class="b-discount">送 2530 积分，每 10 点积分可用于支付 0.01 元。<a href="#">[详细介绍]</a></span>
+        			   <div class="b-real">真实库存，24小时发货！</div>
+        			</div>
+        		</div>
+        		<div class="buy-area">
+        			<div class="b-select">
+        				<h5 class="fl">选择新旧：</h5>
+        				<span class="new-old">
+        					<a href="#">旧书</a>
+        					<a href="#">新书</a>
+        					<a href="#">新旧说明</a>
+        				</span>
+        			</div>
+        			<div class="b-num">
+        				<h5>购买数量：</h5>
+        				<div class="p_number fl">
+							<div class="f_l add_chose">
+								<a class="reduce" onClick="setAmount.reduce('#qty_item_1')" href="javascript:void(0)">
+								-</a>
+								<input type="text" name="qty_item_1" value="1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')" class="text" />
+								<a class="add" onClick="setAmount.add('#qty_item_1')" href="javascript:void(0)">
+								+</a>
+							</div>
+							<div class="f_l buy">
+								总价：<span class="total-font" id="total_item_1">￥89.00</span>
+								<input type="hidden" name="total_price" id="total_price" value="" />
+								<span class="jifen">可获得：<b id="total_points">18</b>积分</span>
+							</div>
+							<span class="fr b-save">库存：121</span>
+						</div>
+        			</div>
+        		</div>
+        	
+        	</div>
+        </div>
+	</div>
+	<div class="b-confirm clearfix commonWidth">
+	    <div class="fl b-other">
+	      <img src="../img/book1/collect.png" />
+	      <b><a href="#">收藏到缺书网</a></b>
+	      <img src="../img/book1/tuijian.png"> 
+	      <b><a href="#">推荐给好友</a></b>
+	      <p class="b-talk">在线交谈：<a href="#"><img src="../img/book1/talk.png"></a></p>
+	      <span class="b-share">
+	      	分享到：<a href="#"><img src="../img/book1/wexin.png"></a>
+	      	<a href="#"><img src="../img/book1/qq.png"></a>
+	      	<a href="#"><img src="../img/book1/weibo.png"></a>
+	      	<a href="#"><img src="../img/book1/dou.png"></a>
+	      </span>
+	    </div>
+	    <div class="b-btn fl">
+	    	<a href="shop-car.html"><span class="btn1"><img src="../img/book1/shopcar.png" />加入购物车</span></a>
+	    	<a href="#"><span>立即购买</span></a>
+	    </div>
+	</div>
+	<div class="commonWidth b-introduce">
+		<div class="fl b-like">
+			<h3>猜你喜欢</h3>
+			<a href="#"><img src="../img/book1/like1.png" /></a>
+			<a href="#"><img src="../img/book1/like2.png" /></a>
+			<a href="#"><img src="../img/book1/like3.png" /></a>
+		</div>
+		<div class="fr book-introduce" id="book">
+			<div id="book-t" class="book-t clearfix">
+				<ul>
+					<li class="bookhover">图书详情</li>
+					<li >图书评价</li>
+				</ul>
+			</div>
+		    <div class="book-detail" id="book-c">
+		    	<div class="book-a bo1">
+		    		<div class="b-detail">
+        			<ul>
+        				<li class="t1">作者：<a href="#">大饼</a></li>
+        				<li class="t2">出版社：<a href="#">湖南文艺出版社</a></li>
+        				<li class="t3">ISBN：9787540476892</li>
+        			</ul>
+        			<ul>
+        				<li class="t1">出版日期：2010年5月6日</li>
+        				<li class="t2">页数：368</li>
+        				<li class="t3">定价：39</li>
+        			</ul>
+        		</div>
+		    	</div>
+		    	<div class="book-a bo2" style="display: none;">
+		    		
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<div>
+         <iframe align="center" width="100%" height="100%" src="../need/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+table tr td{ text-align: center; padding: 6px;}
+/*管理员信息*/
+.admin-in{ height: auto; width: 1160px; margin:20px auto;font-weight:500}
+.admin-in table{margin:0 auto}
+.admin-in a{ color:red; }
+.adtitle{ text-align: center; margin: 10px auto; font-size: 30px; font-weight:600}
+/*增加管理员信息*/
+.updatetitle{color:white;margin:75px auto 10px auto;background:#339933;height: 35px; line-height: 35px; width: 560px; text-align: center;}
+.updatetitle b{ color: orange; font-size: 22px;}
+.updatetitle a{ color:red}
+.updatemain{ width: 1100px; margin: 15px auto;}
+.updatemain form{margin:0 auto; width:450px}
+.commonw input{ height:25px; width:210px}
+.commonw h3{font-size:25px}
+/* 高级查询 */
+.heigh{margin:6px 110px;font-size:16px; padding:5px 5px}
+.heigh input{ margin-left:25px; height:20px;}
+.heigh .heigh-btn{width:80px; height:30px;font-size:14px;font-weight:500}
+/* 图书分类 */
+.select{width:1060px; margin:2px auto}
+.select a{text-decoration:none;display:inline-block; height:30px;width:150px;
+font-size:20px;color:black; background:#999933;color:white;font-size:600;
+text-align:center;line-height:30px; margin:0 30px;border-radius:8px;
+border:5px solid #999933;
+}
+.hover{border:5px solid orange;}
+.select a:hover{border:5px solid orange;}
+
+
+
+
+
+
+
+
